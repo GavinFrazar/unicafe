@@ -20,7 +20,7 @@ const Statistics = ({ good, neutral, bad }) => {
     return <>No feedback given</>;
   }
   const avg = all / 3;
-  const positivePerc = all > 0 ? good / all : 0;
+  const positivePerc = 100 * (all > 0 ? good / all : 0);
   return (
     <table>
       <thead></thead>
